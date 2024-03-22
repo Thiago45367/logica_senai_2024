@@ -1,52 +1,60 @@
-#include <stdio.h>
-#include <locale.h>
-#include <stdlib.h>
+# include <stdio.h>
+# include <locale.h>
+# include <string.h>
 
 
 int main() {
 	setlocale(LC_ALL, "Portuguese");
-   
-    // variaveis.
-    
-char nome[200];
-int idade;
-float notaUm, notaDois, notaTres, soma, media;
 	
-  //dados do usuário.
-printf("digite seu nome: ");
+char nome[200];
+float primeiraNota, segundaNota, media, soma;
+
+
+printf("Escreva seu nome: ");
 scanf("%s",&nome);
 
-printf("digite sua idade: ");
-scanf("%d",&idade);
-  
-printf("digite sua primeira nota: ");
-scanf("%f",&notaUm);
+printf("Escreva sua nota: ");
+printf("\nArtes: ");
+scanf("%f",&primeiraNota);
+printf("\nHistoria: ");
+scanf("%f",&segundaNota);
 
-printf("digite sua segunda nota: ");
-scanf("%f",&notaDois);
 
-printf("digite sua terceira nota: ");
-scanf("%f",&notaTres);  	
+soma = primeiraNota + segundaNota;
+media = soma / 2;		
 	
-  //calculo.
-soma = notaUm + notaDois + notaTres;
-media = soma / 3;
 
-system("cls");
- //resultado.
-printf("\n=== Conclusão ===\n");
-printf("nome: %s \n", nome);
-printf("idade: %d \n", idade);
-printf("Nota1: %.1f \n", notaUm);
-printf("nota2: %.1f \n", notaDois);
-printf("nota3: %.1f \n", notaTres);   	
-if(media >= 7){
-	printf("\nmedia: %.1f", media);
-	printf("\nAprovado.");
-} else{
-	printf("\nmedia: %.1f", media);
-	printf("\nReprovado.");
+printf("\n=== Resultado ===\n");
+printf("\nNome: %s", nome);
+printf("\n=== Notas ===\n");
+printf("\nArtes: %.1f", primeiraNota);
+printf("\nHistoria: %.1f", segundaNota);
+printf("\nMédia: %.1f", media);
+if(media >= 9){
+	printf("\nConceito de: A");
+	printf("\nSituação: Aprovado :)");
+}else{
+	if(media >= 7.5 && media < 9){
+		printf("\nConceito de: B");
+		printf("\nSituação: Aprovado :)");
+	}else{
+		if(media >= 6 && media < 9){
+			printf("\nConceito de: C");
+			printf("\nSituação: Aprovado :)");
+		}else{
+			if(media < 4 && media < 6){
+				printf("\nConceito de: D");
+				printf("\nSituação: Reprovado :(");
+			}else{
+				if(media < 4){
+					printf("\nConceito de: E");
+					printf("\nSitução: Reprovado :(");
+				}
+			}
+		}
+	}
 }	
+	
 	
 return 0;	
 }
