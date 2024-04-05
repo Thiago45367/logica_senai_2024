@@ -29,26 +29,26 @@ printf("\nNome: %s", nome);
 printf("\n=== Notas ===\n");
 printf("\nArtes: %.1f", primeiraNota);
 printf("\nHistoria: %.1f", segundaNota);
-printf("\nMédia: %.1f", media);
+printf("\nMÃ©dia: %.1f", media);
 if(media >= 9){
 	printf("\nConceito de: A");
-	printf("\nSituação: Aprovado :)");
+	printf("\nSituaÃ§Ã£o: Aprovado :)");
 }else{
 	if(media >= 7.5 && media < 9){
 		printf("\nConceito de: B");
-		printf("\nSituação: Aprovado :)");
+		printf("\nSituaÃ§Ã£o: Aprovado :)");
 	}else{
 		if(media >= 6 && media < 9){
 			printf("\nConceito de: C");
-			printf("\nSituação: Aprovado :)");
+			printf("\nSituaÃ§Ã£o: Aprovado :)");
 		}else{
 			if(media < 4 && media < 6){
 				printf("\nConceito de: D");
-				printf("\nSituação: Reprovado :(");
+				printf("\nSituaÃ§Ã£o: Reprovado :(");
 			}else{
 				if(media < 4){
 					printf("\nConceito de: E");
-					printf("\nSitução: Reprovado :(");
+					printf("\nSituÃ§Ã£o: Reprovado :(");
 				}
 			}
 		}
