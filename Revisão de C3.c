@@ -11,7 +11,7 @@ int main() {
 	
 	for (i = 1; i <= 2; i++) {
 		do {
-			printf("Escreva a %iº nota: ", i);
+			printf("Escreva a %iÂº nota: ", i);
 			scanf("%f",&nota);
 		}while (nota < 0 || nota > 10);
 		
@@ -19,7 +19,7 @@ int main() {
 	}
 	media = soma / 2;
 	
-	printf("\n=== Exibindo média ===\n");
+	printf("\n=== Exibindo mÃ©dia ===\n");
 	printf("media: %.1f \n", media);
 	
 return 0;	
