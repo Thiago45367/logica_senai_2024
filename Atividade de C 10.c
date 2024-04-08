@@ -13,7 +13,7 @@ int main() {
 	// variaveis.
 	char login[200], senha[200], loginCadastrado[200] = "BOB", senhaCadastrado[200] = "345";
 	
-	// dados do usúarios.
+	// dados do usÃºarios.
 	do{
 		
 	printf("Digite o login: ");
