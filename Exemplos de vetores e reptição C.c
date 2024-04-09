@@ -18,6 +18,12 @@ int main() {
 		scanf("%d", &vetor[i]);
 	}
 	
+	system("cls");
+	
+	for (i = 0; i < 5; i++) {
+		printf("Elemento %d: %d\n", i+1, vetor[i]);
+	}
+	
 	
 	
 return 0;	
