@@ -13,7 +13,7 @@ int main() {
 	// variaveis.
 	char login[200], senha[200], loginCadastrado[200] = "BOB", senhaCadastrado[200] = "345";
 	int i;
-	// dados do usúarios.
+	// dados do usÃºarios.
 	for (i = 1; i <= 3; i++) {	
 		printf("Digite o login: ");
 		scanf("%s",&login);
