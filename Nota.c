@@ -26,10 +26,10 @@ int main() {
 	
 	printf("\nExibindo as notas informadas: \n");
 	for (i = 0; i < TAM; i++) {
-		printf("%dª nota: %.1f \n", i+1, notas[i]);
+		printf("%dÂª nota: %.1f \n", i+1, notas[i]);
 	}
 	
-	printf("\nMédia: %.1f \n", media);
+	printf("\nMÃ©dia: %.1f \n", media);
 	
 	
 	
