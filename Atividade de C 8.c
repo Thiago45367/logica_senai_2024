@@ -14,24 +14,24 @@ int main() {
 	int filhos, opcao, familia, contadorSalario = 0, contadorFilho = 0, somaFilho = 0;
 	float salario, maiorSalario, menorSalario, mediafilho, somaSalario = 0, mediaSalario;
 	
-	// dados do usúario.
+	// dados do usÃºario.
 	do {
 	
 	
 	printf("===== MENU ===== \n");
 		printf("1 - Adicionar familiar \n");
 		printf("2 - Exibir resultado e sair \n");
-		printf("Escreva a opção desejada: ");
+		printf("Escreva a opÃ§Ã£o desejada: ");
 		scanf("%i",&opcao);
 		
 	switch (opcao) {
 		case 1:
-			break;
-		printf("Escreva seu salário: ");
+			
+		printf("Escreva seu salÃ¡rio: ");
 		scanf("%f",&salario);
 		fflush(stdin);
 	
-		printf("Escreva o número de filho: ");
+		printf("Escreva o nÃºmero de filho: ");
 		scanf("%i",&filhos);
 		fflush(stdin);
 	
@@ -51,7 +51,7 @@ int main() {
 case 2:
 	 break;
 default:
-	    printf("\nOpção inválida! \n");
+	    printf("\nOpÃ§Ã£o invÃ¡lida! \n");
 	    sleep(4);
         system("cls || clear");	
 
@@ -61,7 +61,7 @@ mediaSalario =somaSalario / contadorSalario;
 
 
 printf("=== Exibindo resultados ===\n");	
-	printf("média salarial do grupo: %.2f \n", mediaSalario);
+	printf("mÃ©dia salarial do grupo: %.2f \n", mediaSalario);
 	printf("maior idade: %i \n", maiorSalario);
 	printf("menor idade: %i \n", menorSalario);	
 	   
