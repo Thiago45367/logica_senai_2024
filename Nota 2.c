@@ -26,17 +26,17 @@ int main() {
 	
 	printf("\nExibindo as notas informadas: \n");
 	for (i = 0; i < TAM; i++) {
-		printf("%dª nota: %.1f \n", i+1, notas[i]);
+		printf("%dÂª nota: %.1f \n", i+1, notas[i]);
 	}
 	
-	printf("\nMédia: %.1f \n", media);
+	printf("\nMÃ©dia: %.1f \n", media);
 	if(media >= 7) {
-		printf("\nSituação: Aprovado :)");
+		printf("\nSituaÃ§Ã£o: Aprovado :)");
 	}else{
 		if(media >= 5) {
-			printf("\nSituaçâo: Recuperaçâo :(");
+			printf("\nSituaÃ§Ã¢o: RecuperaÃ§Ã¢o :(");
 		} else {
-			printf("\nSituaçâo: Reprovado :(");
+			printf("\nSituaÃ§Ã¢o: Reprovado :(");
 		}
 	}
 	
