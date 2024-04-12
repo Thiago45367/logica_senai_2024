@@ -9,9 +9,9 @@ int main() {
 	float numero[TAM], somaPositivo = 0;
 	int i, quantidadeNegativo = 0;
 	
-	printf("=== Solicitando dados para o usu·rio === \n");
+	printf("=== Solicitando dados para o usu√°rio === \n");
 	for (i = 0; i < TAM; i++) {
-			printf("Escreva o %i∫ n˙mero: ", i+1);
+			printf("Escreva o %i¬∫ n√∫mero: ", i+1);
 			scanf("%f",&numero[i]);
 			
 			if (numero[i] < 0) {
@@ -19,9 +19,9 @@ int main() {
 			}
 	}
 	
-	printf("\n=== Exibindo dados para o usu·rio === \n");
+	printf("\n=== Exibindo dados para o usu√°rio === \n");
 	for (i = 0; i < TAM; i++) {
-		printf("%i∫ n˙mero: %.1f \n", i+1, numero[i]);
+		printf("%i¬∫ n√∫mero: %.1f \n", i+1, numero[i]);
 	}
 	
 	
