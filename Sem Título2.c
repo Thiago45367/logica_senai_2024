@@ -1,35 +1,56 @@
-# include <stdio.h>
-# include <locale.h>
-# include <string.h>
+#include <stdio.h>
+#include <locale.h>
+#include <string.h>
 
 #define TAM 5
 
-
 int main() {
-	setlocale(LC_ALL, "Portuguese");
+	setlocale(LC_ALL,"");
+	// variaveis.
+	int numero[TAM];
+	int numeroPares = 0, numeroImpares = 0, numeroPositivos = 0, numeroNegativos = 0, quantidadeNumero = 0;
 	
-	char nome[TAM][200];
-	int i, idade[TAM];
 	
-	printf("Escreva seu nome:\n");
-	for (i = 0; i < TAM; i++) {
-			printf("Escreva o %iº nome: ", i+1);
-			scanf("%s",nome[i]);
-			
-				printf("Escreva a %iº idade: ", i+1);
-			scanf("%i",&idade[i]);
-			
-			printf("\n");
+	// dados do usuário.
+	printf("Escreva cinco números.");
+	
+	int i = 0;
+	
+do {
+	printf("Escreva um número: ");
+	scanf("%i",&numero);
+	
+	if (numero != 0) {
+		quantidadeNumero++;
 	}
-	
-	system("cls");
-	
-	printf("\n=== Exibindo dados para o usuário === \n");
+
 	for (i = 0; i < TAM; i++) {
-			printf("%iº nome: %s \n", i+1, nome[i]);
-			printf("iº idade: %i \n\n", i+1, idade[i]);
+		printf("Escreva o %iº número:",i+1);
+		scanf("%i",&numero[i]);
+		
+		if (numero[i] < 0) {
+				numeroNegativos++;
+		} else if (numero[i] > 0) {
+				numeroPositivos += numero[i];
+		}
+		if (numero[i] % 2 == 0){
+			numeroPares++;
+		} else {
+			numeroImpares++;
+		} 
+		
 	}
+} while (numero < 0);
+	printf("\n=== Exibindo dados para o usuário ===\n");
 	
+	printf("Número positivo: %i \n", numeroPositivos);
+	printf("Número negativo: %i \n", numeroNegativos);
+	printf("Número pares: %i \n", numeroPares);
+	printf("Número impar: %i \n", numeroImpares);
+	printf("Números inseridos: %i \n", TAM);
+	
+	
+		
 	
 	
 return 0;	
