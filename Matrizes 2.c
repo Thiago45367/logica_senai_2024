@@ -9,13 +9,13 @@ int main() {
 	float notas[2] [3], media[4], soma = 0;
 	int i, j;
 	
-	printf("=== Solicitando dados para o usu·rio == \n");
+	printf("=== Solicitando dados para o usu√°rio == \n");
 	for (i = 0; i < 4; i++) {
-		printf("Escreva a %i∫ aluno: ", i+1);
+		printf("Escreva a %i¬∫ aluno: ", i+1);
 		scanf("%s",&alunos[i]);
 		
 		for (j = 0; j < 3; j++) {
-			printf("Escreva a %i∫ nota: ", j+1);
+			printf("Escreva a %i¬∫ nota: ", j+1);
 			scanf("%f",&notas[i][j]);
 			
 			soma += notas[i][j];
@@ -27,10 +27,10 @@ int main() {
 		
 		printf("\nExibindo as notas informados: \n");
 		for (j = 0; j < 3; j++) {
-			printf("%d∫ nota: %.1f \n", j+1, notas[i][j]);
+			printf("%d¬∫ nota: %.1f \n", j+1, notas[i][j]);
 		}
 		
-		printf("\nMÈdia: %.1f \n", media[i]);
+		printf("\nM√©dia: %.1f \n", media[i]);
 		
 		
 		
